@@ -6,4 +6,280 @@
     box-sizing: border-box;
     font-family: "Roboto", serif;
     letter-spacing: -0.031rem;
+    --primary-color: #6366f1;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --border-color: #e2e8f0;
+    --sidebar-width: 16rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: #fff;
+    border-right: 1px solid var(--border-color);
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 0.5rem;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+nav h3 {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 0.25rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0.25rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f1f5f9;
+}
+
+.label::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.label.marketing::before { background-color: #22d3ee; }
+.label.development::before { background-color: #818cf8; }
+.label.design::before { background-color: #fb923c; }
+.label.modeling::before { background-color: #f472b6; }
+
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-task {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.notifications {
+    width: 2rem;
+    height: 2rem;
+    background-color: #f1f5f9;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #64748b;
+    border-radius: 50%;
+}
+
+.view-options {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.view-options button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.view-options button.active {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.task-columns {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+}
+
+.column h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.column h2 button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.task-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.task-label.design { color: #fb923c; }
+.task-label.development { color: #818cf8; }
+.task-label.marketing { color: #22d3ee; }
+.task-label.modeling { color: #f472b6; }
+
+.task-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.task-project {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.task-description {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.task-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-assignees {
+    display: flex;
+}
+
+.task-assignees .avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #64748b;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -0.5rem;
+}
+
+.task-assignees .avatar:first-child {
+    margin-left: 0;
+}
+
+.task-stats {
+    display: flex;
+    gap: 0.5rem;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .task-columns {
+        flex-direction: column;
+    }
+}
+

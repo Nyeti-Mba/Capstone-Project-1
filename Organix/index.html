@@ -8,28 +8,191 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="main-container">
+
+     <!--Dashboard Container-->
+    <div class="dashboard">
+
+        <!--Sidebar Container-->
         <div class="sidebar">
             <div class="logo">
-                
+                <div class="logo-icon"></div>
+                <span class="logo-text">organix.</span>
             </div>
 
-            <div class="search">
-
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>F</button>
             </div>
 
             <div class="main-menu">
+                <h3>MAIN MENU</h3>
 
+                <div class="menu-item-container">
+                    <div class="menu-icon-container">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+
+                    <div class="menu-text-container">
+                        <p>Home</p>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Team Member</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Wallet</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Mail</a></li>
+                </ul>
+                
             </div>
 
-            <div class="labels">
-
+            <div class="label">
+                <h3>LABEL</h3>
+                <ul>
+                    <li><a href="#" class="label marketing">Marketing</a></li>
+                    <li><a href="#" class="label development">Development</a></li>
+                    <li><a href="#" class="label design">Design</a></li>
+                    <li><a href="#" class="label modeling">3D Modeling</a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="right-container">
-
-        </div>
+        <!--Main Content Container-->
+        <main class="main-content">
+            
+            <div class="header">
+                <h1>Tasks</h1>
+                <div class="header-actions">
+                    <button class="add-task">+ Add Task</button>
+                    <button class="notifications"></button>
+                    <div class="user-avatar"></div>
+                </div>
+            </div>
+            <div class="view-options">
+                <button class="active">Board</button>
+                <button>Table</button>
+                <button>Calendar</button>
+                <button class="filter">Filter</button>
+                <button class="sort">Sort</button>
+            </div>
+            <div class="task-columns">
+                <div class="column">
+                    <h2>To-Do <button>+</button></h2>
+                    <div class="task-card">
+                        <span class="task-label design">DESIGN</span>
+                        <h3>Customer Journey Mapping</h3>
+                        <p class="task-project">Kidzone</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <span class="task-label design">DESIGN</span>
+                        <h3>UI Component Modification</h3>
+                        <p class="task-project">Bookly</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2>In Progress <button>+</button></h2>
+                    <div class="task-card">
+                        <span class="task-label development">DEVELOPMENT</span>
+                        <h3>Database Customization</h3>
+                        <p class="task-project">Uber</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <span class="task-label modeling">3D MODELLING</span>
+                        <h3>Fix Interior Planning</h3>
+                        <p class="task-project">Hotel Nice</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2>Done <button>+</button></h2>
+                    <div class="task-card">
+                        <span class="task-label design">DESIGN</span>
+                        <h3>Redesign WordPress Website</h3>
+                        <p class="task-project">Design Lab</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <span class="task-label marketing">MARKETING</span>
+                        <h3>Facebook Ads Campaign</h3>
+                        <p class="task-project">Plaintify</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet consectetur. Purus arcu neque id neque molestie.</p>
+                        <div class="task-meta">
+                            <div class="task-assignees">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-stats">
+                                <span>16</span>
+                                <span>16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     
 </body>
