@@ -41,22 +41,20 @@
     border-radius: 50%;
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
 .search-bar {
     display: flex;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
+    background-color: #F2F4F7;
 }
 
 .search-bar input {
     flex-grow: 1;
     border: none;
     padding: 0.5rem;
+    background-color: #F2F4F7;
 }
 
 .search-bar button {
@@ -103,10 +101,6 @@ nav ul li a.active {
     margin-right: 0.5rem;
 }
 
-.label.marketing::before { background-color: #22d3ee; }
-.label.development::before { background-color: #818cf8; }
-.label.design::before { background-color: #fb923c; }
-.label.modeling::before { background-color: #f472b6; }
 
 .main-content {
     flex-grow: 1;
